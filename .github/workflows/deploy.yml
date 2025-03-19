@@ -29,6 +29,8 @@ jobs:
         run: |
           echo "Good"
           echo "Morning"
+      - name: 테스트 실행하기
+        run: npm run test
 
       # 참고: https://docs.github.com/en/actions/learn-github-actions/variables
       - name: Github Actions 자체에 저장되어 있는 변수 사용해보기
