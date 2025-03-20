@@ -38,7 +38,6 @@ jobs:
 
   deploy:
     needs: build-and-test # test 작업이 성공적으로 완료된 후에만 실행 -> 이건 이름이 정해져있나?
-    if: github.ref == 'refs/heads/main' # main 브랜치일 때만 배포
     runs-on: ubuntu-latest
     steps:
       - name: Trigger Vercel Deployment
