@@ -13,7 +13,7 @@ on:
 # 여러 Job은 기본적으로 병렬적으로 수행된다.
 jobs:
   # Job을 식별하기 위한 id
-  My-Deploy-Job:
+  build-and-test:
     runs-on: ubuntu-latest
 
     # Step : 특정 작업을 수행하는 가장 작은 단위
@@ -37,7 +37,7 @@ jobs:
         run: npm run test
 
   deploy:
-    needs: test # test 작업이 성공적으로 완료된 후에만 실행 -> 이건 이름이 정해져있나?
+    needs: build-and-test # test 작업이 성공적으로 완료된 후에만 실행 -> 이건 이름이 정해져있나?
     if: github.ref == 'refs/heads/main' # main 브랜치일 때만 배포
     runs-on: ubuntu-latest
     steps:
