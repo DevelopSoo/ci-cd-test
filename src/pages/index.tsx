@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
       <h1>
-        유닛 테스트 연습하기
+        유닛 테스트 연습하기 2
       </h1>
       <div>
         <button onClick={decreaseQuantity}>-</button>

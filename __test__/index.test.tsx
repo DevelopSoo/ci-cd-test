@@ -12,7 +12,7 @@ describe("메인 페이지 테스트", () => {
 		// getByText: 태그에 작성된 텍스트를 바탕으로 요소를 찾기 
 		// expect: 기대하는 결과 설정 (getByText의 결과가 기대하는 결과와 일치하는지 확인하는 함수)
 		// toBeInTheDocument: 요소가 문서에 있는지 확인
-		expect(screen.getByText("유닛 테스트 연습하기")).toBeInTheDocument();
+		expect(screen.getByText("유닛 테스트 연습하기 2")).toBeInTheDocument();
 	})
 
 	test('수량 증가 기능 테스트', () => {
