@@ -5,9 +5,6 @@ name: Github Actions 실행시켜보기
 # Event : 실행되는 시점을 설정
 # main이라는 브랜치에 push 될 때 아래 Workflow를 실행
 on:
-  pull_request:
-    branches:
-      - main
   push:
     branches:
       - "**"
